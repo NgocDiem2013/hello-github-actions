@@ -1,0 +1,116 @@
+
+  .serch_date_a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+    font-weight:bold;
+    border-bottom: 2px solid transparent;
+    height: 30px;
+  }
+  .serch_date_a::after {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #0539c9;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    text-decoration: none;
+  }
+
+  .serch_date_a:hover::after {
+    bottom: -2px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .serch_date_a:hover {
+    text-decoration: none;
+  }
+
+
+.tooltip_click, .tooltip_hover {
+  cursor: pointer;
+  content : "[？]"
+}
+
+.tooltip_text {
+  font-size:0.8em;
+  margin:5px;
+  color : #000;
+}
+.filtering-box-left a,
+.compact-sort a{
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: 0;
+    transition: 0;
+}
+.filtering-box-left a:hover,
+.compact-sort a:hover{opacity:1 !important;}
+
+.serch_date_a .fitter_active:hover{transition: 0;opacity: 1;}
+
+@media screen and (max-width:900px) {
+
+}
+
+.fitter_active {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color:#000;
+  font-weight:bold;
+  border-bottom: 2px solid #0539c9;
+  padding-bottom: 0;
+  height: 30px;
+}
+
+.paging_first{
+  float:left;
+  border:1px solid #ccc;
+  padding:15px 7px;
+  margin-right:10px;
+}
+.paging_last {
+  float:left;
+  border:1px solid #ccc;
+  padding:15px 7px;
+}
+.paging_number, .paging_next, .paging_prev {
+  float:left;
+  border:1px solid #ccc;
+  padding:15px 7px;
+  margin-right:10px;
+}
+.paging_now {
+  float:left;
+  font-size:1.2em;
+  padding:15px 15px;
+  margin-right:10px;
+}
+
+
+#infomation_ticker {
+	background:rgba(122, 173, 255, 0.8);
+	font-size:0.9em;
+	color:#fff;
+	padding-left:30px;
+}
+#infomation_ticker ul li{
+	padding:4px 0px;
+	list-style-type:disc;
+}
+#infomation_ticker .btn_info_detail {
+	cursor:pointer;
+}
+#infomation_ticker .btn_info_visble {
+	cursor:pointer;
+	margin-left:10px;
+	font-size:0.9em;
+	font-weight:bold;
+}
